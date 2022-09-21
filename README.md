@@ -27,3 +27,13 @@ kubectl apply -f examples/kubernetes/
 ```
 
 [1]: https://github.com/Intellection/docker-redis/tree/main/examples/kubernetes
+
+## Contributing
+
+1. Clone the main branch, and create a branch for the feature / fix.
+2. Make your changes.
+3. Update the changelog with your changes. The version should follow the upstream version of the packaged application. For example if the version of RedisGraph is 2.8.8, the version will be 2.8.8. In the case where the version already exists, you should append an incrementing single digit to it (i.e. 2.8.8-1).
+4. Push your branch up and create a pull request.
+5. After the pull request is merged, git pull origin main and ensure it's up-to-date.
+6. Create a tag with the version you added to the changelog using git tag -a x.y.z. The title should be "Version x.y.z" followed by the changes as the message (as per the changelog).
+7. Push your tag, which will kick off a CI workflow to build and release the image.
