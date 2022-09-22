@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.8.20
+
+* Bump RedisGraph to v2.8.20
+
 ## 2.8.19
 
 * Bump RedisGraph to v2.8.19
